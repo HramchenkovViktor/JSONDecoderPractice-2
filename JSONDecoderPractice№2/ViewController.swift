@@ -19,7 +19,8 @@ class ViewController: UIViewController {
         {
             "movie_title": "Interstellar",
             "release_year": 2014,
-            "rating": 8.7
+            "rating": 8.7,
+            "director": null
         }
         """
         
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
             print("Фильм: \(movie.title)")
             print("Год: \(movie.year)")
             print("Рейтинг: \(movie.rating)")
+            print("Режиссёр: \(movie.director ?? "Неизвестен")")
         } catch {
             print("Ошибка декодирования: \(error)")
         }
